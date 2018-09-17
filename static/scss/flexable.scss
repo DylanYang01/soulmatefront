@@ -1,0 +1,198 @@
+/*弹性布局display flex的兼容处理*/
+
+/* 父元素-flex容器 */
+
+@mixin flex {
+    
+        display: box;
+        /* OLD - Android 4.4- */
+        display: -webkit-box;
+        /* OLD - iOS 6-, Safari 3.1-6 */
+        display: -moz-box;
+        /* OLD - Firefox 19- (buggy but mostly works) */
+        display: -ms-flexbox;
+        /* TWEENER - IE 10 */
+        display: -webkit-flex;
+        /* NEW - Chrome */
+        display: flex;
+        /* NEW, Spec - Opera 12.1, Firefox 20+ */
+   
+}
+
+@mixin horizon {
+    /* 父元素-横向排列（主轴） */
+   
+       
+        /* 09版 */
+        -webkit-box-orient: horizontal;
+        /* 12版 */
+        -webkit-flex-direction: row;
+        -moz-flex-direction: row;
+        -ms-flex-direction: row;
+        -o-flex-direction: row;
+        flex-direction: row;
+    
+}
+
+/* 父元素-横向换行 */
+
+.flex-hw {
+    @include flex;
+    @include horizon;
+    /* 09版 */
+    /*-webkit-box-lines: multiple;*/
+    /* 12版 */
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    -o-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+/* 父元素-横向不换行 */
+
+.flex-not-hw {
+    @include flex;
+    @include horizon;
+    /* 09版 */
+    /*-webkit-box-lines: multiple;*/
+    /* 12版 */
+    -webkit-flex-wrap: nowrap;
+    -moz-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    -o-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+}
+
+/* 父元素-水平居中（主轴是横向才生效） */
+
+.flex-hc {
+    @include flex;
+    @include horizon;
+    /* 09版 */
+    -webkit-box-pack: center;
+    /* 12版 */
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    -o-justify-content: center;
+    justify-content: center;
+}
+
+/* 父元素-从左向右（主轴是横向才生效） */
+
+.flex-hs {
+    @include flex;
+    @include horizon;
+    /* 09版 */
+    -webkit-box-pack: flex-start;
+    /* 12版 */
+    -webkit-justify-content: flex-start;
+    -moz-justify-content: flex-start;
+    -ms-justify-content: flex-start;
+    -o-justify-content: flex-start;
+    justify-content: flex-start;
+}
+
+.flex-end {
+    /* 09版 */
+    -webkit-box-pack: flex-end;
+    /* 12版 */
+    -webkit-justify-content: flex-end;
+    -moz-justify-content: flex-end;
+    -ms-justify-content: flex-end;
+    -o-justify-content: flex-end;
+    justify-content: flex-end;
+}
+
+/* 父元素-等间距排列，首尾不留白（主轴是横向才生效） */
+
+.flex-h-s-b {
+    @include flex;
+    @include horizon;
+    /* 09版 */
+    -webkit-box-pack: space-between;
+    /* 12版 */
+    -webkit-justify-content: space-between;
+    -moz-justify-content: space-between;
+    -ms-justify-content: space-between;
+    -o-justify-content: space-between;
+    justify-content: space-between;
+}
+
+/* 父元素-等间距排列，首尾留白（主轴是横向才生效） */
+
+.flex-h-s-a {
+    @include flex;
+    @include horizon;
+    /* 09版 */
+    -webkit-box-pack: space-around;
+    /* 12版 */
+    -webkit-justify-content: space-around;
+    -moz-justify-content: space-around;
+    -ms-justify-content: space-around;
+    -o-justify-content: space-around;
+    justify-content: space-around;
+}
+
+/* 父元素-纵向排列（主轴） */
+
+@mixin vertical {
+    .flex-v {
+        @include flex;
+        /* 09版 */
+        -webkit-box-orient: vertical;
+        /* 12版 */
+        -webkit-flex-direction: column;
+        -moz-flex-direction: column;
+        -ms-flex-direction: column;
+        -o-flex-direction: column;
+        flex-direction: column;
+    }
+}
+
+/* 父元素-纵向换行 */
+
+.flex-vw {
+    @include vertical;
+    /* 09版 */
+    /*-webkit-box-lines: multiple;*/
+    /* 12版 */
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    -o-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+/* 父元素-竖直居中（主轴是横向才生效） */
+@mixin vc {
+    -webkit-box-align: center;
+    /* 12版 */
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    -o-align-items: center;
+    align-items: center;
+}
+.flex-vc {
+    @include vertical;
+    /* 09版 */
+    @include vc;
+}
+.flex-v-c{
+    @include vc;
+}
+
+/* 父元素-从顶部开始（主轴是横向才生效） */
+
+.flex-vs {
+    /* 09版 */
+    -webkit-box-align: flex-start;
+    /* 12版 */
+    -webkit-align-items: flex-start;
+    -moz-align-items: flex-start;
+    -ms-align-items: flex-start;
+    -o-align-items: flex-start;
+    align-items: flex-start;
+}

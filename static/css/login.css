@@ -1,0 +1,81 @@
+.main {
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  padding: 0 45px;
+}
+
+.main .logo {
+  padding: 107px 0 71px;
+}
+
+.main .logo img {
+  display: block;
+  height: 141px;
+  width: 141px;
+  margin: 0 auto;
+}
+
+.main .input-title {
+  margin-bottom: 24px;
+}
+
+.main .input-block {
+  border: 1px solid #ececec;
+  height: 81px;
+  width: 100%;
+  padding-top: 5px;
+  border-radius: 40px;
+  margin-bottom: 35px;
+}
+
+.main .input-block .input-r {
+  width: 69%;
+  height: 70px;
+  border: none;
+  float: left;
+  margin-left: 10px;
+}
+
+.main .input-block .icon-box {
+  width: 80px;
+  height: 70px;
+  border-right: 1px solid #ececec;
+  line-height: 70px;
+  text-align: center;
+  float: left;
+}
+
+.main .input-block .icon-box .iconfont {
+  font-size: 30px;
+}
+
+.main .input-block .split {
+  background-color: #ececec;
+  height: 70px;
+  width: 1px;
+  display: inline-block;
+}
+
+.main .no-account {
+  width: 50%;
+}
+
+.main .no-account a {
+  font-weight: bold;
+}
+
+.main .s-btn {
+  display: block;
+  padding: 26px 170px;
+  border-radius: 40px;
+  background-color: #ff5a5f;
+  color: #ffffff;
+  border: none;
+  outline: none;
+  font-size: 26px;
+}
+
+.main .s-btn.submit-btn {
+  margin: 58px auto;
+}

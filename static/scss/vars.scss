@@ -1,0 +1,21 @@
+// 字体大小
+$basefont:26px;
+$placeholder:30px;
+// 通用字体颜色
+$basecolor:#737373;
+$bordercolor:#ececec;
+// 主题红色
+$basebackground:#ff5a5f;
+// 主题背景色
+$bodybackground:#f1f1f1;
+//边框颜色
+@mixin border {
+        border: 1px solid $bordercolor;
+}
+
+// 提示背景色
+$tipsbackground:#cecece;
+
+
+
+

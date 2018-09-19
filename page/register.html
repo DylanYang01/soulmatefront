@@ -26,12 +26,15 @@
 </head>
 
 <body>
-    <div class="main">
-        <div class="logo">
-            <img src="../static/img/logo.png" alt="">
+    <!-- 头部 -->
+    
+        <div class="header-top">
+            <span class="fl iconfont icon-fanhui"></span>
+            注册
         </div>
-        <form action="" method="POST">
-            <h1 class="input-title">MS登录</h1>
+
+    <div class="main">
+        <form action="" method="POST" class="register-area">
             <div class="input-block ">
                 <div class="icon-box">
                     <span class="iconfont icon-weigouxuan"></span>
@@ -39,29 +42,26 @@
                 <input type="number" placeholder="请输入手机号" class="input-r">
             </div>
             <div class="input-block ">
+                    <div class="icon-box">
+                         <span class="iconfont icon-weigouxuan" ></span>
+                    </div>
+                    <input type="number" placeholder="请输入验证码" class="input-c">
+                    <span class="getcode">获取验证码</span>
+                </div>
+            <div class="input-block ">
                 <div class="icon-box">
                     <span class="iconfont icon-weigouxuan"></span>
                 </div>
                 <input type="password" placeholder="请输入密码" class="input-r">
             </div>
-            <div class="clearfix">
-                <span class="fl ">无法登录？</span>
-                <div class="fr no-account">
-                    <span class="grayfont">还没有账号？</span>
-                    <a href=""> 立即注册<span class="iconfont icon-weigouxuan"></span> </a>
-                </div>
+            <!-- 协议点击选择 -->
+            <div class="agree-area text-center grayfont">
+                <span class="iconfont icon-fenxiang"></span>
+                我已阅读并接受注册协议
             </div>
-            <button class="s-btn submit-btn">登录</button>
+            <button class="s-btn submit-btn">完成</button>
         </form>
-        <!-- 第三方登录 -->
-        <h1 class="grayfont text-center split-title">使用第三方登录</h1>
-        <div class="flex flex-h-s-a threelogin">
-            <img src="../static/img/qq.png" alt="QQ">
-            <img src="../static/img/weixin.png" alt="Weixin">
-            <img src="../static/img/weibo.png" alt="Weibo">
-        </div>
-        <p class="grayfont text-center"> 提示：暂不接受未成年注册，请确认<br/>您已经满18岁。
-        </p>
+
 
     </div>
 

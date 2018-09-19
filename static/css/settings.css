@@ -1,0 +1,43 @@
+.settingsbtn {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 1.751rem;
+}
+
+.suleswitch {
+  position: relative;
+  width: 0.7rem;
+  height: 0.42rem;
+  -moz-border-radius: 0.2rem;
+  -webkit-border-radius: 0.2rem;
+  border-radius: 0.2rem;
+  transition: all 0.4s;
+}
+
+.suleswitch .dot {
+  display: block;
+  height: 0.38rem;
+  width: 0.38rem;
+  -moz-border-radius: 100%;
+  -webkit-border-radius: 100%;
+  border-radius: 100%;
+  background-color: #ffffff;
+  position: absolute;
+  top: 0;
+}
+
+.suleswitch.switchon {
+  background-color: #13ce66;
+}
+
+.suleswitch.switchon .dot {
+  right: 0;
+}
+
+.suleswitch.switchoff {
+  background-color: #eaecf0;
+}
+
+.suleswitch.switchoff .dot {
+  left: 0;
+}

@@ -1,0 +1,19 @@
+.labelblock h1 {
+  padding: 0.2rem 0;
+}
+
+.labelblock .label-item {
+  display: inline-block;
+  padding: 0.12rem 0.26rem;
+  text-align: center;
+  background-color: #ededed;
+  margin: 0 0.09rem 0.17rem 0;
+  -moz-border-radius: 0.3rem;
+  -webkit-border-radius: 0.3rem;
+  border-radius: 0.3rem;
+  font-size: 0.24rem;
+}
+
+.labelblock .label-item .iconfont {
+  font-size: 0.24rem;
+}

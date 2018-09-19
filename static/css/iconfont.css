@@ -8,13 +8,13 @@
 
 .iconfont {
   font-family: "iconfont" !important;
-  font-size: 26px;
+  font-size: 0.26rem;
   font-style: normal;
   color: #737373;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   vertical-align: middle;
-  margin: 0 10px;
+  margin: 0 0.08rem;
 }
 
 .icon-fenxiang:before {

@@ -1,0 +1,17 @@
+.articlewraper {
+  height: 100vh;
+  overflow: scroll;
+  width: 100%;
+  padding: 1.4rem 0.4rem 0 0.4rem;
+  background-color: #ffffff;
+}
+
+.articlewraper h1 {
+  font-size: 0.3rem;
+  color: #505050;
+  margin-bottom: 0.24rem;
+}
+
+.articlewraper p {
+  margin-bottom: 0.25rem;
+}

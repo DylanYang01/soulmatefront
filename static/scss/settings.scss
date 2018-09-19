@@ -1,0 +1,36 @@
+@import "vars.scss";
+.settingsbtn {
+    position: absolute;
+    bottom: 1.5rem;
+    left: 1.751rem;
+}
+
+// 开关
+.suleswitch {
+    position: relative;
+    width: 0.7rem;
+    height: 0.42rem;
+    @include borderradius(0.2rem);
+    transition: all 0.4s;
+    .dot {
+        display: block;
+        height: 0.38rem;
+        width: 0.38rem;
+        @include borderradius(100%);
+        background-color: #ffffff;
+        position: absolute;
+        top: 0;
+    }
+    &.switchon {
+        background-color: #13ce66;
+        .dot {
+            right: 0;
+        }
+    }
+    &.switchoff {
+        background-color: #eaecf0;
+        .dot {
+            left: 0;
+        }
+    }
+}

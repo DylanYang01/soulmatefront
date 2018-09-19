@@ -1,0 +1,51 @@
+@import "vars.scss";
+@import "animate.scss";
+.headimg-area {
+    width: 100%;
+    height: 3rem;
+    background: url("../img/fillmessagebg.png") no-repeat;
+    background-size: cover;
+    margin-bottom: 0.2rem;
+    img {
+        width: 1.4rem;
+        height: 1.4rem;
+        margin: 0.4rem auto 0.3rem;
+    }
+    .changebg {
+        height: 0.5rem;
+        width: 1.8rem;
+        line-height: 0.5rem;
+        text-align: center;
+        color: $bordercolor;
+        border: 1px solid $bordercolor;
+        @include borderradius(0.05rem);
+        background: transparent;
+        outline: none;
+        span {
+            color: $bordercolor;
+        }
+    }
+}
+
+.itemblock {
+    animation-duration: 2s;
+    -webkit-animation-duration: 2s;
+    animation-timing-function:ease-in-out;
+    /* Safari 和 Chrome */
+}
+
+.animateitem1 {
+    -webkit-animation-name: fadeInUp1;
+    animation-name: fadeInUp1;
+   
+}
+
+.animateitem2 {
+    -webkit-animation-name: fadeInUp2;
+    animation-name: fadeInUp2;
+}
+
+.animateitem3 {
+    -webkit-animation-name: fadeInUp3;
+    animation-name: fadeInUp3;
+}

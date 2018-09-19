@@ -138,7 +138,6 @@
 /* 父元素-纵向排列（主轴） */
 
 @mixin vertical {
-    .flex-v {
         @include flex;
         /* 09版 */
         -webkit-box-orient: vertical;
@@ -148,7 +147,7 @@
         -ms-flex-direction: column;
         -o-flex-direction: column;
         flex-direction: column;
-    }
+     
 }
 
 /* 父元素-纵向换行 */

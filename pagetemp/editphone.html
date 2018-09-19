@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>更改绑定手机号</title>
+    <link type="text/css" href="../static/css/reset.css" rel="stylesheet" /> 
+    <link type="text/css" href="../static/css/login.css" rel="stylesheet" /> 
+    @@include('./rem.html')
+</head>
+
+<body>
+    <!-- 头部 -->
+    @@include('./head-back-text.html', { "title": "更改绑定手机号" })
+    <div class="main">
+        <form action="" method="POST" class="edit-phone-area">
+            <!-- 如果已经绑定 直接显示 -->
+            <p class="remindtext">已绑定手机号：15090186595</p>
+            <!-- <div class="input-block ">
+                <input type="number" placeholder="请输入手机号" class="input-r">
+            </div> -->
+            <div class="input-block last-input-block ">
+                    <input type="number" placeholder="请输入验证码" class="input-c">
+                    <span class="getcode">获取验证码</span>
+                </div>
+          
+         
+            <button class="s-btn submit-btn">完成</button>
+        </form>
+
+
+    </div>
+
+
+</body>
+
+</html>

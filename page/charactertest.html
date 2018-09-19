@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>性格测试</title>
+    <link type="text/css" href="../static/css/reset.css" rel="stylesheet" />
+    <link type="text/css" href="../static/css/charactertest.css" rel="stylesheet" />
+     <script type="text/javascript">
+         var html = document.querySelector('html');
+         var rem = html.offsetWidth / 7.5;
+         html.style.fontSize = rem + "px";
+
+         window.onresize = function () {
+             var res;
+             if (res) {
+                 clearTimeout(res)
+             }
+             res = setTimeout(function () {
+                 html = document.querySelector('html');
+                 rem = html.offsetWidth / 7.5;
+                 html.style.fontSize = rem + "px";
+             }, 20);
+         };
+     </script>
+</head>
+
+<body>
+    <!-- 头部 -->
+    
+    <div class="header-top">
+            <span class="fl iconfont icon-fanhui"></span>
+            性格测试
+            <span class="fr operatespan">完成</span>
+        </div>
+    <!-- 主体区域 -->
+    <div class="maincontent">
+        <p class="remindtext">  本测试共有15道题，请耐心完成测试 </p>
+        <div class="answercontent">
+            <div class="thirdpage"></div>
+            <div class="secondpage"></div>
+            <!-- 设置了2个第一页 是为了第一个移走了之后 留一个底  这个底子 应该展示的是第二页的内容 -->
+            <div class="firstpage"></div>
+            <!-- 这个移走卡片的动画 要在完成点击之后添加 moveaway  类名  就可以动画 -->
+            <div class="firstpage moveaway">
+                <div class="title">
+                        1.直接在设计发送“收m”这种类似的一句话交友会怎么样？（单选）
+                </div>
+                <ol class="questions" type="A">
+                    <li class="selected">会有很多人找你</li>
+                    <li>会被管理删帖</li>
+                    <li>无所谓刷屏而已</li>
+                </ol>
+                <button class="sulebtn answerbtn">下一步</button>
+            </div>
+
+        </div>
+        <p class="answerpage"><span>1</span>/<span>5</span></p>
+         
+       
+    
+
+    </div>
+
+
+
+
+</body>
+
+</html>

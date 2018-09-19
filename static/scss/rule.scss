@@ -1,0 +1,19 @@
+
+
+@import "vars.scss";
+.articlewraper{
+    height: 100vh;
+    overflow: scroll;
+    width: 100%;
+    padding : 1.4rem 0.4rem 0 0.4rem;
+    background-color: #ffffff;
+    h1{
+        font-size: $placeholder;
+        color: $itemcolor;
+        margin-bottom: 0.24rem;
+    }
+    p{
+        margin-bottom: 0.25rem;
+
+    }
+}

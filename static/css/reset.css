@@ -9,13 +9,13 @@
 
 .iconfont {
   font-family: "iconfont" !important;
-  font-size: 26px;
+  font-size: 0.26rem;
   font-style: normal;
   color: #737373;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   vertical-align: middle;
-  margin: 0 10px;
+  margin: 0 0.08rem;
 }
 
 .icon-fenxiang:before {
@@ -32,34 +32,6 @@
 
 .icon-weigouxuan:before {
   content: "\e63e";
-}
-
-.fl {
-  float: left !important;
-}
-
-.fr {
-  float: right !important;
-}
-
-.hide {
-  display: none !important;
-}
-
-.clearfix {
-  zoom: 1;
-}
-
-.clearfix::after, .clearfix::before {
-  content: " ";
-  display: table;
-}
-
-.clearfix::after {
-  clear: both;
-  visibility: hidden;
-  font-size: 0;
-  height: 0;
 }
 
 /* 
@@ -88,7 +60,7 @@ html, body {
   width: 100%;
   height: 100%;
   color: #737373;
-  font-size: 26px;
+  font-size: 0.26rem;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -109,7 +81,7 @@ fieldset, lengend, button, input, textarea {
 h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
   line-height: 1em;
-  font-size: 26px;
+  font-size: 0.26rem;
 }
 
 /**
@@ -303,7 +275,7 @@ button:-moz-focusring,
 /* 取消chrome下默认的文本框聚焦样式 */
 input, textarea {
   outline: none;
-  font-size: 26px;
+  font-size: 0.26rem;
 }
 
 /* 移除 chrome 自动补全时黄色背景 */
@@ -322,7 +294,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 
 input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
   color: #cccccc;
-  font-size: 30px;
+  font-size: 0.3rem;
 }
 
 /*弹性布局display flex的兼容处理*/
@@ -539,6 +511,26 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
 /* 父元素-纵向排列（主轴） */
 /* 父元素-纵向换行 */
 .flex-vw {
+  display: box;
+  /* OLD - Android 4.4- */
+  display: -webkit-box;
+  /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;
+  /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+  display: flex;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  /* 09版 */
+  -webkit-box-orient: vertical;
+  /* 12版 */
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  -o-flex-direction: column;
+  flex-direction: column;
   /* 09版 */
   /*-webkit-box-lines: multiple;*/
   /* 12版 */
@@ -549,7 +541,8 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
   flex-wrap: wrap;
 }
 
-.flex-vw .flex-v {
+/* 父元素-竖直居中（主轴是横向才生效） */
+.flex-vc {
   display: box;
   /* OLD - Android 4.4- */
   display: -webkit-box;
@@ -570,10 +563,6 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
   -ms-flex-direction: column;
   -o-flex-direction: column;
   flex-direction: column;
-}
-
-/* 父元素-竖直居中（主轴是横向才生效） */
-.flex-vc {
   /* 09版 */
   -webkit-box-align: center;
   /* 12版 */
@@ -582,29 +571,6 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
   -ms-align-items: center;
   -o-align-items: center;
   align-items: center;
-}
-
-.flex-vc .flex-v {
-  display: box;
-  /* OLD - Android 4.4- */
-  display: -webkit-box;
-  /* OLD - iOS 6-, Safari 3.1-6 */
-  display: -moz-box;
-  /* OLD - Firefox 19- (buggy but mostly works) */
-  display: -ms-flexbox;
-  /* TWEENER - IE 10 */
-  display: -webkit-flex;
-  /* NEW - Chrome */
-  display: flex;
-  /* NEW, Spec - Opera 12.1, Firefox 20+ */
-  /* 09版 */
-  -webkit-box-orient: vertical;
-  /* 12版 */
-  -webkit-flex-direction: column;
-  -moz-flex-direction: column;
-  -ms-flex-direction: column;
-  -o-flex-direction: column;
-  flex-direction: column;
 }
 
 .flex-v-c {
@@ -655,4 +621,119 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
   visibility: hidden;
   font-size: 0;
   height: 0;
+}
+
+.grayfont {
+  color: #9C9D9D !important;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.header-top {
+  width: 100%;
+  height: 0.89rem;
+  line-height: 0.89rem;
+  background-color: #ffffff;
+  font-size: 0.3rem;
+  padding: 0 0.38rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  text-align: center;
+  -moz-box-shadow: 0px 2px 0.05rem #e3d6d6;
+  -webkit-box-shadow: 0px 2px 0.05rem #e3d6d6;
+  box-shadow: 0px 2px 0.05rem #e3d6d6;
+}
+
+.header-top .operatespan {
+  font-size: 0.26rem;
+}
+
+.maincontent {
+  padding: 1.08rem 0.2rem 0 0.2rem;
+}
+
+.maincontent .blockcontent {
+  padding: 0.3rem 0.2rem;
+  background-color: #ffffff;
+  -moz-border-radius: 0.1rem;
+  -webkit-border-radius: 0.1rem;
+  border-radius: 0.1rem;
+}
+
+.itemblock {
+  width: 100%;
+  padding: 0 0.2rem;
+  background-color: #ffffff;
+  margin-bottom: 0.19rem;
+  -moz-border-radius: 0.1rem;
+  -webkit-border-radius: 0.1rem;
+  border-radius: 0.1rem;
+  font-size: 0.26rem;
+  color: #505050;
+}
+
+.itemblock li {
+  padding: 0.25rem 0;
+  border-bottom: 1px solid #ececec;
+}
+
+.itemblock li .iconfont {
+  color: #505050;
+  margin: 0.06rem 0 0 0.1rem;
+}
+
+.itemblock li:last-child {
+  border: none;
+}
+
+.itemblock li span:last-child {
+  margin-top: 0.03rem;
+}
+
+.sulebtn {
+  display: inline-block;
+  padding: 0.2rem 0.6rem;
+  background-color: #ff5a5f;
+  outline: none;
+  border: none;
+  -moz-box-shadow: 0px 4px 0.05rem #e3d6d6;
+  -webkit-box-shadow: 0px 4px 0.05rem #e3d6d6;
+  box-shadow: 0px 4px 0.05rem #e3d6d6;
+  color: #ffffff;
+  -moz-border-radius: 0.6rem;
+  -webkit-border-radius: 0.6rem;
+  border-radius: 0.6rem;
+}
+
+.suleblankbtn {
+  display: inline-block;
+  padding: 0.2rem 1.7rem;
+  color: #ff5a5f;
+  font-size: 0.3rem;
+  outline: none;
+  border: 2px solid #ff5a5f;
+  background-color: #ffffff;
+  -moz-border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.suletextarea {
+  width: 100%;
+  height: 4rem;
+  display: block;
+  -moz-border-radius: 0.1rem;
+  -webkit-border-radius: 0.1rem;
+  border-radius: 0.1rem;
+  margin-bottom: 0.38rem;
+  background-color: #f1f1f1;
+  color: #9C9D9D;
+  font-size: 0.3rem;
+  padding: 0.22rem 0.25rem;
+  border: none;
+  outline: none;
+  resize: none;
 }

@@ -1,0 +1,19 @@
+.contactwraper h1 {
+  font-size: 0.3rem;
+  margin-bottom: 0.22rem;
+}
+
+.contactwraper .contactbtn, .contactwraper .imgbtn, .contactwraper .submitebtn {
+  display: block;
+  padding: 0.15rem 0.45rem;
+  font-size: 0.3rem;
+}
+
+.contactwraper .contactbtn {
+  margin-bottom: 0.49rem;
+}
+
+.contactwraper .submitebtn {
+  color: #ffffff;
+  background-color: #ff5a5f;
+}

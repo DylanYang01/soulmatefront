@@ -1,6 +1,6 @@
 // 字体大小
-$basefont:26px;
-$placeholder:30px;
+$basefont:0.26rem;
+$placeholder:0.30rem;
 // 通用字体颜色
 $basecolor:#737373;
 $bordercolor:#ececec;
@@ -10,12 +10,22 @@ $basebackground:#ff5a5f;
 $bodybackground:#f1f1f1;
 //边框颜色
 @mixin border {
-        border: 1px solid $bordercolor;
+    border: 1px solid $bordercolor;
+}
+
+@mixin border-bottom {
+    border-bottom: 1px solid $bordercolor;
+}
+
+@mixin borderradius($size...) {
+    -moz-border-radius: $size;
+    -webkit-border-radius: $size;
+    border-radius: $size;
 }
 
 // 提示背景色
 $tipsbackground:#cecece;
-
-
-
-
+// 列表条目框区域的文字颜色
+$itemcolor:#505050;
+// 灰色标签
+$graylabel:#ededed;

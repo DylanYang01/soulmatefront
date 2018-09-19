@@ -1,0 +1,17 @@
+<script type="text/javascript">
+    var html = document.querySelector('html');
+    var rem = html.offsetWidth / 7.5;
+    html.style.fontSize = rem + "px";
+
+    window.onresize = function () {
+        var res;
+        if (res) {
+            clearTimeout(res)
+        }
+        res = setTimeout(function () {
+            html = document.querySelector('html');
+            rem = html.offsetWidth / 7.5;
+            html.style.fontSize = rem + "px";
+        }, 20);
+    };
+</script>

@@ -1,0 +1,18 @@
+@import "vars.scss";
+.labelblock{
+    h1{
+        padding: 0.2rem 0;
+    }
+    .label-item{
+        display: inline-block;
+        padding: 0.12rem 0.26rem;
+        text-align: center;
+        background-color: $graylabel;
+        margin: 0 0.09rem 0.17rem 0;
+        @include borderradius(0.3rem);
+        font-size: 0.24rem;
+        .iconfont{
+            font-size: 0.24rem;
+        }
+    }
+}

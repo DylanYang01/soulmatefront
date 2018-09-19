@@ -1,0 +1,22 @@
+@import "vars.scss";
+.contactwraper {
+    h1 {
+        font-size: $placeholder;
+        margin-bottom: 0.22rem;
+    }
+    .contactbtn,.imgbtn,.submitebtn {
+        display: block;
+        padding: 0.15rem 0.45rem;
+        font-size: $placeholder;
+        
+    }
+    .contactbtn{
+        margin-bottom: 0.49rem;
+    }
+    
+    .submitebtn{
+        color: #ffffff;
+        background-color: $basebackground;
+
+    }
+}

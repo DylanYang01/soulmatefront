@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>隐私设置</title>
+    <link type="text/css" href="../static/css/reset.css" rel="stylesheet" />
+    <link type="text/css" href="../static/css/private.css" rel="stylesheet" />
+      <script type="text/javascript">
+          var html = document.querySelector('html');
+          var rem = html.offsetWidth / 7.5;
+          html.style.fontSize = rem + "px";
+
+          window.onresize = function () {
+              var res;
+              if (res) {
+                  clearTimeout(res)
+              }
+              res = setTimeout(function () {
+                  html = document.querySelector('html');
+                  rem = html.offsetWidth / 7.5;
+                  html.style.fontSize = rem + "px";
+              }, 20);
+          };
+      </script>
+</head>
+
+<body>
+    <!-- 头部 -->
+    
+        <div class="header-top">
+            <span class="fl iconfont icon-fanhui"></span>
+            隐私设置
+        </div>
+
+    <!-- 主体区域 -->
+    <div class="maincontent">
+       
+   
+        <ul class="itemblock ">
+            <li class="clearfix radioitem"><span class="fl">所有人</span> <input type="radio" name="isshow" id="item1" value="1" checked><label for="item1" class="fr"></label> </li>
+            <li class="clearfix radioitem"><span class="fl">我关注的人</span><input type="radio" name="isshow" id="item2" value="2" ><label for="item2" class="fr"></label>  </li>
+            <li class="clearfix radioitem"><span class="fl">我的粉丝</span><input type="radio" name="isshow" id="item3" value="3" ><label for="item3" class="fr"></label>  </li>
+        </ul>
+        
+
+     
+
+    </div>
+
+
+
+</body>
+
+</html>
